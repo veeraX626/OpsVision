@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="OpsVision is a modern server monitoring dashboard landing page for DevOps and cloud teams. Monitor infrastructure health, performance, alerts, and security in real time." />
+  <meta name="theme-color" content="#08111f" />
+  <title>OpsVision | Server Monitoring Dashboard</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="page-shell">
+    <header class="topbar" id="top">
+      <a class="brand" href="#hero" aria-label="OpsVision home">
+        <span class="brand-mark">O</span>
+        <span class="brand-text">OpsVision</span>
+      </a>
+
+      <button class="menu-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="site-nav" id="site-nav" aria-label="Primary">
+        <a href="#features">Features</a>
+        <a href="#metrics">Metrics</a>
+        <a href="#dashboard">Dashboard</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+
+      <a class="nav-cta" href="#pricing">Start Free Trial</a>
+    </header>
+
+    <main>
+      <section class="hero section" id="hero">
+        <div class="hero-copy reveal">
+          <div class="eyebrow">
+            <span class="pulse-dot"></span>
+            Live infrastructure intelligence
+          </div>
+          <h1>Monitor Your Infrastructure with Confidence</h1>
+          <p class="hero-subtitle">Real-time server monitoring, performance analytics, and instant alerts for modern DevOps teams.</p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#pricing">Start Monitoring</a>
+            <a class="btn btn-secondary" href="#dashboard">View Dashboard</a>
+          </div>
+
+          <div class="hero-trust">
+            <div>
+              <strong>24/7</strong>
+              <span>observability coverage</span>
+            </div>
+            <div>
+              <strong>&lt; 2s</strong>
+              <span>alert delivery</span>
+            </div>
+            <div>
+              <strong>99.99%</strong>
+              <span>platform reliability</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal">
+          <div class="orb orb-one"></div>
+          <div class="orb orb-two"></div>
+          <div class="dashboard-frame floating-card">
+            <div class="frame-header">
+              <div class="window-dots"><span></span><span></span><span></span></div>
+              <div class="frame-title">OpsVision / Live Cluster Overview</div>
+              <div class="live-pill"><span></span> Live</div>
+            </div>
+
+            <div class="hero-dashboard-grid">
+              <div class="mini-card status-ok">
+                <span>Cluster Health</span>
+                <strong>Healthy</strong>
+                <small>24 nodes online</small>
+              </div>
+              <div class="mini-card status-warn">
+                <span>Alert Queue</span>
+                <strong>03</strong>
+                <small>1 critical, 2 warning</small>
+              </div>
+              <div class="mini-card status-info">
+                <span>CPU Avg</span>
+                <strong>42%</strong>
+                <small>Stable across regions</small>
+              </div>
+              <div class="mini-card spark-card">
+                <div class="sparkline" aria-hidden="true">
+                  <span style="height: 42%"></span>
+                  <span style="height: 56%"></span>
+                  <span style="height: 33%"></span>
+                  <span style="height: 72%"></span>
+                  <span style="height: 48%"></span>
+                  <span style="height: 88%"></span>
+                  <span style="height: 61%"></span>
+                </div>
+                <small>Traffic spike analysis</small>
+              </div>
+            </div>
+
+            <div class="hero-chart">
+              <div class="chart-grid"></div>
+              <svg viewBox="0 0 400 140" preserveAspectRatio="none" class="chart-line" aria-hidden="true">
+                <defs>
+                  <linearGradient id="heroGradient" x1="0" y1="0" x2="1" y2="0">
+                    <stop offset="0%" stop-color="#60a5fa" />
+                    <stop offset="50%" stop-color="#8b5cf6" />
+                    <stop offset="100%" stop-color="#22d3ee" />
+                  </linearGradient>
+                  <linearGradient id="heroFill" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="0%" stop-color="rgba(96,165,250,0.45)" />
+                    <stop offset="100%" stop-color="rgba(8,17,31,0.05)" />
+                  </linearGradient>
+                </defs>
+                <path d="M0,108 C35,84 52,38 86,44 C119,50 133,110 165,96 C203,79 215,20 251,26 C287,33 295,104 331,92 C355,84 369,55 400,46 L400,140 L0,140 Z" fill="url(#heroFill)"></path>
+                <path d="M0,108 C35,84 52,38 86,44 C119,50 133,110 165,96 C203,79 215,20 251,26 C287,33 295,104 331,92 C355,84 369,55 400,46" fill="none" stroke="url(#heroGradient)" stroke-width="4" stroke-linecap="round"></path>
+              </svg>
+              <div class="chart-legend">
+                <span><i class="legend-dot primary"></i> CPU</span>
+                <span><i class="legend-dot purple"></i> Memory</span>
+                <span><i class="legend-dot cyan"></i> Network</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="features">
+        <div class="section-heading reveal">
+          <span class="section-tag">Platform Features</span>
+          <h2>Everything you need to keep systems visible, fast, and secure.</h2>
+          <p>OpsVision gives engineering and operations teams a single place to track performance, detect issues, and act before users notice a problem.</p>
+        </div>
+
+        <div class="features-grid">
+          <article class="feature-card reveal">
+            <div class="feature-icon">◉</div>
+            <h3>Real-Time Monitoring</h3>
+            <p>Track infrastructure signals live across servers, apps, clusters, and cloud services with sub-second visibility.</p>
+          </article>
+          <article class="feature-card reveal">
+            <div class="feature-icon">⌘</div>
+            <h3>Container Insights</h3>
+            <p>Observe pods, containers, and orchestration health with resource usage and deployment intelligence.</p>
+          </article>
+          <article class="feature-card reveal">
+            <div class="feature-icon">⚡</div>
+            <h3>CPU & Memory Analytics</h3>
+            <p>Analyze resource trends to identify bottlenecks, capacity risks, and performance regressions early.</p>
+          </article>
+          <article class="feature-card reveal">
+            <div class="feature-icon">!</div>
+            <h3>Instant Alerting</h3>
+            <p>Trigger targeted notifications through Slack, email, and webhooks when systems exceed safe thresholds.</p>
+          </article>
+          <article class="feature-card reveal">
+            <div class="feature-icon">◔</div>
+            <h3>Uptime Tracking</h3>
+            <p>Monitor service availability with historical uptime trends, outage summaries, and SLA visibility.</p>
+          </article>
+          <article class="feature-card reveal">
+            <div class="feature-icon">⛨</div>
+            <h3>Security Monitoring</h3>
+            <p>Detect unusual access patterns, auth failures, and policy breaches across your infrastructure footprint.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section metrics-band" id="metrics">
+        <div class="section-heading reveal compact">
+          <span class="section-tag">Live Metrics</span>
+          <h2>Trusted by teams that run critical infrastructure.</h2>
+        </div>
+
+        <div class="stats-grid">
+          <article class="stat-card reveal"><span data-count="99.99" data-suffix="%" class="count">0%</span><p>Uptime</p></article>
+          <article class="stat-card reveal"><span data-count="1250" data-suffix="+" class="count">0+</span><p>Servers Monitored</p></article>
+          <article class="stat-card reveal"><span data-count="25" data-suffix="M" class="count">0M</span><p>Metrics Processed</p></article>
+          <article class="stat-card reveal"><span data-count="350" data-suffix="+" class="count">0+</span><p>Active Teams</p></article>
+        </div>
+      </section>
+
+      <section class="section" id="dashboard">
+        <div class="section-heading reveal">
+          <span class="section-tag">Dashboard Preview</span>
+          <h2>Rich monitoring widgets designed for instant operational decisions.</h2>
+          <p>Explore a realistic dashboard surface with live-style cards, charts, and status signals that feel ready for production.</p>
+        </div>
+
+        <div class="dashboard-preview reveal">
+          <div class="preview-sidebar">
+            <div class="sidebar-card">
+              <span>Server Health</span>
+              <div class="health-row"><i class="health-dot healthy"></i> api-prod-01 <strong>98%</strong></div>
+              <div class="health-row"><i class="health-dot healthy"></i> web-prod-07 <strong>96%</strong></div>
+              <div class="health-row"><i class="health-dot warn"></i> db-primary <strong>84%</strong></div>
+              <div class="health-row"><i class="health-dot critical"></i> cache-node-2 <strong>71%</strong></div>
+            </div>
+            <div class="sidebar-card mini-status">
+              <span>Deployment Status</span>
+              <strong>Rolling update in progress</strong>
+              <small>Version 4.18.2 • 12% complete</small>
+            </div>
+          </div>
+
+          <div class="preview-main">
+            <div class="main-grid">
+              <div class="widget widget-large">
+                <div class="widget-head">
+                  <h3>CPU Usage</h3>
+                  <span class="status-pill success">Stable</span>
+                </div>
+                <div class="bar-chart" aria-hidden="true">
+                  <span style="height: 36%"></span>
+                  <span style="height: 44%"></span>
+                  <span style="height: 52%"></span>
+                  <span style="height: 65%"></span>
+                  <span style="height: 58%"></span>
+                  <span style="height: 72%"></span>
+                  <span style="height: 61%"></span>
+                  <span style="height: 77%"></span>
+                  <span style="height: 53%"></span>
+                  <span style="height: 41%"></span>
+                </div>
+              </div>
+
+              <div class="widget widget-large">
+                <div class="widget-head">
+                  <h3>Memory Usage</h3>
+                  <span class="status-pill warning">Monitor</span>
+                </div>
+                <div class="donut-wrap">
+                  <div class="donut" style="--p:72"></div>
+                  <div class="donut-label"><strong>72%</strong><span>Average RAM</span></div>
+                </div>
+              </div>
+
+              <div class="widget">
+                <div class="widget-head">
+                  <h3>Network Activity</h3>
+                  <span class="status-pill info">Live</span>
+                </div>
+                <svg viewBox="0 0 320 150" class="network-graph" aria-hidden="true">
+                  <path d="M0,113 C28,94 41,48 70,54 C101,61 110,109 142,94 C175,79 180,29 213,34 C249,39 252,111 289,92 C304,84 309,66 320,61" fill="none" stroke="#22d3ee" stroke-width="4" stroke-linecap="round"></path>
+                  <path d="M0,133 C33,116 44,72 76,78 C106,84 117,128 148,120 C185,110 188,57 220,63 C250,68 259,121 295,108 C306,104 313,90 320,86" fill="none" stroke="#8b5cf6" stroke-width="4" stroke-linecap="round" opacity="0.9"></path>
+                </svg>
+              </div>
+
+              <div class="widget status-feed">
+                <div class="widget-head">
+                  <h3>System Events</h3>
+                  <span class="status-pill success">4 Healthy</span>
+                </div>
+                <ul>
+                  <li><span class="event-time">2m</span> Database failover test completed successfully.</li>
+                  <li><span class="event-time">7m</span> Auto-scaling increased web capacity by 18%.</li>
+                  <li><span class="event-time">13m</span> Security scan finished with zero critical issues.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="testimonials">
+        <div class="section-heading reveal">
+          <span class="section-tag">Testimonials</span>
+          <h2>Built for teams that need confidence at scale.</h2>
+        </div>
+
+        <div class="testimonials-grid">
+          <article class="testimonial-card reveal">
+            <div class="profile-pic">AL</div>
+            <h3>Ava Lin</h3>
+            <span>Head of Platform, Nebula Cloud</span>
+            <p>OpsVision made it easy to spot service drift before our customers felt it. The dashboard is fast, clear, and genuinely useful for our on-call rotation.</p>
+          </article>
+          <article class="testimonial-card reveal">
+            <div class="profile-pic">MR</div>
+            <h3>Marcus Reed</h3>
+            <span>CTO, ForgeStack</span>
+            <p>We replaced three separate monitoring tools with a single operational view. It feels polished enough for exec reviews and deep enough for engineering.</p>
+          </article>
+          <article class="testimonial-card reveal">
+            <div class="profile-pic">SJ</div>
+            <h3>Sophia Jones</h3>
+            <span>DevOps Lead, HyperGrid</span>
+            <p>The alerting and uptime story is excellent. Our team reacts faster, and the visual hierarchy makes the most important issues obvious at a glance.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="pricing">
+        <div class="section-heading reveal">
+          <span class="section-tag">Pricing</span>
+          <h2>Flexible plans for growing operations teams.</h2>
+        </div>
+
+        <div class="pricing-grid">
+          <article class="pricing-card reveal">
+            <span class="plan-label">Starter</span>
+            <h3>$29<span>/mo</span></h3>
+            <p>For small teams getting started with infrastructure visibility.</p>
+            <ul>
+              <li>Up to 50 servers</li>
+              <li>Basic alerting</li>
+              <li>14-day history</li>
+            </ul>
+            <a class="btn btn-secondary block" href="#hero">Choose Starter</a>
+          </article>
+          <article class="pricing-card featured reveal">
+            <span class="plan-label">Professional</span>
+            <h3>$79<span>/mo</span></h3>
+            <p>Best for operations teams managing multiple services and regions.</p>
+            <ul>
+              <li>Up to 500 servers</li>
+              <li>Advanced dashboards</li>
+              <li>90-day history</li>
+            </ul>
+            <a class="btn btn-primary block" href="#hero">Choose Professional</a>
+          </article>
+          <article class="pricing-card reveal">
+            <span class="plan-label">Enterprise</span>
+            <h3>Custom</h3>
+            <p>Designed for large organizations with compliance and scale requirements.</p>
+            <ul>
+              <li>Unlimited servers</li>
+              <li>SSO & RBAC</li>
+              <li>Priority support</li>
+            </ul>
+            <a class="btn btn-secondary block" href="#hero">Contact Sales</a>
+          </article>
+        </div>
+      </section>
+
+      <section class="section faq-section" id="faq">
+        <div class="section-heading reveal">
+          <span class="section-tag">FAQ</span>
+          <h2>Frequently asked questions.</h2>
+        </div>
+
+        <div class="faq-list" data-accordion>
+          <details class="faq-item reveal">
+            <summary>What does OpsVision monitor?</summary>
+            <p>OpsVision monitors servers, containers, application performance, network activity, alerts, uptime, and security signals in one dashboard.</p>
+          </details>
+          <details class="faq-item reveal">
+            <summary>Is this website connected to a backend?</summary>
+            <p>No. This landing page is fully static and built only with HTML, CSS, and JavaScript.</p>
+          </details>
+          <details class="faq-item reveal">
+            <summary>Does the dashboard work on mobile devices?</summary>
+            <p>Yes. The layout is fully responsive and adapts smoothly to mobile, tablet, and desktop screens.</p>
+          </details>
+          <details class="faq-item reveal">
+            <summary>Are the metrics and charts interactive?</summary>
+            <p>The page includes animated charts, hover effects, and scroll-triggered counters to create a realistic monitoring experience.</p>
+          </details>
+          <details class="faq-item reveal">
+            <summary>Can I customize the visuals?</summary>
+            <p>Absolutely. The structure is clean and modular, so you can quickly adjust colors, content, and dashboard widgets.</p>
+          </details>
+          <details class="faq-item reveal">
+            <summary>Is the page SEO-friendly?</summary>
+            <p>Yes. It includes semantic sections, meta tags, and a descriptive document structure suitable for search engines.</p>
+          </details>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-brand">
+        <a class="brand" href="#hero" aria-label="OpsVision home">
+          <span class="brand-mark">O</span>
+          <span class="brand-text">OpsVision</span>
+        </a>
+        <p>Modern server monitoring for DevOps, cloud, and platform teams.</p>
+      </div>
+
+      <div class="footer-links">
+        <a href="#features">Features</a>
+        <a href="#metrics">Metrics</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#faq">FAQ</a>
+      </div>
+
+      <div class="social-icons" aria-label="Social links">
+        <a href="#hero" aria-label="Twitter">𝕏</a>
+        <a href="#hero" aria-label="LinkedIn">in</a>
+        <a href="#hero" aria-label="GitHub">⌂</a>
+      </div>
+
+      <div class="copyright">© 2026 OpsVision. All rights reserved.</div>
+    </footer>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
